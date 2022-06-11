@@ -1,0 +1,14 @@
+{
+    "recipes": {
+        "megaubytovaniesk/core-bundle": [
+            "0.1"
+        ]
+    },
+    "branch": "main",
+    "is_contrib": true,
+    "_links": {
+        "repository": "github.com/vkozelka/symfony-flex",
+        "origin_template": "{package}:{version}@github.com/vkozelka/symfony-flex:master",
+        "recipe_template": "https://api.github.com/repos/vkozelka/symfony-flex/contents/{package_dotted}.{version}.json"
+    }
+}
