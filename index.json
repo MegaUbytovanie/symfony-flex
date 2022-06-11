@@ -1,6 +1,6 @@
 {
     "recipes": {
-        "megaubytovaniesk/core-bundle": [
+        "vkozelka/mu-core-bundle": [
             "0.1"
         ]
     },

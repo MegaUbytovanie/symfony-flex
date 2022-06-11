@@ -1,9 +1,9 @@
 {
     "manifests": {
-        "megaubytovaniesk/core-bundle": {
+        "vkozelka/mu-core-bundle": {
             "manifest": {
                 "bundles": {
-                    "Megaubytovaniesk\\CoreBundle\\CoreBundle": [
+                    "Vkozelka\\MuCoreBundle\\MuCoreBundle": [
                         "all"
                     ]
                 },
