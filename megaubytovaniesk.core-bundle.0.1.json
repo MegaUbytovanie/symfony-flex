@@ -6,6 +6,9 @@
                     "Megaubytovaniesk\\CoreBundle\\CoreBundle": [
                         "all"
                     ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
                 }
             },
             "ref": "3e78231bbf35996b9d4f024c45e45030f2ed1f24"
