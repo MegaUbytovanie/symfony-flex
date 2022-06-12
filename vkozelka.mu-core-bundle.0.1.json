@@ -9,6 +9,19 @@
                 },
                 "copy-from-recipe": {
                     "config/": "%CONFIG_DIR%"
+                },
+                "files": {
+                    "config/pacakges/mu-core.yaml": {
+                        "contents": [
+                            "mu-core-bundle:",
+                            "   doctrine:",
+                            "       dbal:",
+                            "           url: '%env(MU_DATABASE_URL)'"
+                        ]
+                    }
+                },
+                "env": {
+                    "MU_DATABASE_URL": ""
                 }
             },
             "ref": "3e78231bbf35996b9d4f024c45e45030f2ed1f24"
