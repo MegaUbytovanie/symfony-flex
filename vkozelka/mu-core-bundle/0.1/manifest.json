@@ -1,0 +1,11 @@
+{
+    "bundles": {
+        "Vkozelka\\MuCoreBundle\\MuCoreBundle": ["all"]
+    },
+    "copy-from-recipe": {
+        "config/": "%CONFIG_DIR%/"
+    },
+    "env": {
+        "MU_DATABASE_URL": ""
+    }
+}

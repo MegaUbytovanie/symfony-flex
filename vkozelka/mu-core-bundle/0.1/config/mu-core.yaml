@@ -1,0 +1,4 @@
+mu-core-bundle:
+    doctrine:
+        dbal:
+            url: '%env(MU_DATABASE_URL)'
