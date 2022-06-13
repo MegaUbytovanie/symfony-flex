@@ -1,9 +1,6 @@
 {
-    "aliases": ["mu_core"],
     "bundles": {
-        "MuCoreBundle\\MuCoreBundle": [
-            "all"
-        ]
+        "MuCoreBundle\\MuCoreBundle": ["all"]
     },
     "copy-from-recipe": {
         "config/": "%CONFIG_DIR%/"
