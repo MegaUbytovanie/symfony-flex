@@ -18,7 +18,10 @@
                 },
                 "env": {
                     "MU_DATABASE_URL": "mysql://mu_db_user:mu_db_password@mysql:3306/megaubytovanie_sk?serverVersion=8.0&charset=utf8mb4"
-                }
+                },
+                "post-install-output": [
+                    "  * <fg=blue>Update</> <comment>.env</> file with correct values for <comment>MU_DATABASE_URL</>"
+                ]
             },
             "ref": "3e78231bbf35996b9d4f024c45e45030f2ed1f24"
         }
