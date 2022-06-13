@@ -4,7 +4,7 @@
     },
     "recipes": {
         "vkozelka/mu-core-bundle": [
-            "0.1"
+            "dev-main"
         ]
     },
     "branch": "main",
