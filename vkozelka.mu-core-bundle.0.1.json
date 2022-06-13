@@ -7,14 +7,8 @@
                         "all"
                     ]
                 },
-                "files": {
-                    "config/packages/mu_core.yaml": {
-                        "contents": [
-                            "parameters:",
-                            "   mu_core_doctrine_dbal_url: '%env(resolve:MU_DATABASE_URL)%'"
-                        ],
-                        "executable": false
-                    }
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
                 },
                 "env": {
                     "MU_DATABASE_URL": "mysql://mu_db_user:mu_db_password@mysql:3306/megaubytovanie_sk?serverVersion=8.0&charset=utf8mb4"
@@ -22,6 +16,15 @@
                 "post-install-output": [
                     "  * <fg=blue>Update</> <comment>.env</> file with correct values for <comment>MU_DATABASE_URL</>"
                 ]
+            },
+            "files": {
+                "config/packages/mu_core.yaml": {
+                    "contents": [
+                        "parameters:",
+                        "   mu_core_doctrine_dbal_url: '%env(resolve:MU_DATABASE_URL)%'"
+                    ],
+                    "executable": false
+                }
             },
             "ref": "3e78231bbf35996b9d4f024c45e45030f2ed1f24"
         }
