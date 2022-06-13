@@ -1,0 +1,14 @@
+{
+    "aliases": ["mu_core"],
+    "bundles": {
+        "MuCoreBundle\\MuCoreBundle": [
+            "all"
+        ]
+    },
+    "copy-from-recipe": {
+        "config/": "%CONFIG_DIR%/"
+    },
+    "env": {
+        "MU_DATABASE_URL": "mysql://mu_db_user:mu_db_password@mysql:3306/megaubytovanie_sk?serverVersion=8.0&charset=utf8mb4"
+    }
+}

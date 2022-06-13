@@ -1,0 +1,2 @@
+parameters:
+    mu_core_doctrine_dbal_url: '%env(resolve:MU_DATABASE_URL)%'
