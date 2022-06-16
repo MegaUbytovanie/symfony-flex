@@ -11,75 +11,19 @@
                     "config/": "%CONFIG_DIR%/"
                 },
                 "env": {
-                    "MU_DATABASE_URL": "mysql://mu_db_user:mu_db_password@mysql:3306/megaubytovanie_sk?serverVersion=8.0&charset=utf8mb4"
+                    "MU_DATABASE_URL": "mysql://user:password@127.0.0.1:3306/dbname?serverVersion=8.0&charset=utf8mb4",
+                    "MU_ELASTICSEARCH_URL": "http://localhost:9200"
                 },
                 "post-install-output": [
-                    "  * <fg=blue>Update</> <comment>.env</> file with correct values for <comment>MU_DATABASE_URL</>"
+                    "  * <fg=blue>Update</> <comment>.env</> file with correct values for <comment>MU_DATABASE_URL</>, <comment>MU_ELASTICSEARCH_URL</>"
                 ]
             },
             "files": {
                 "config/packages/mu_core.yaml": {
                     "contents": [
                         "parameters:",
-                        "   mu_core_doctrine_dbal_url: '%env(resolve:MU_DATABASE_URL)%'"
-                    ],
-                    "executable": false
-                },
-                "config/packages/doctrine.yaml": {
-                    "contents": [
-                        "doctrine:",
-                        "    dbal:",
-                        "        url: '%mu_core_doctrine_dbal_url%'",
-                        "",
-                        "        # IMPORTANT: You MUST configure your server version,",
-                        "        # either here or in the DATABASE_URL env var (see .env file)",
-                        "        #server_version: '13'",
-                        "    orm:",
-                        "        auto_generate_proxy_classes: true",
-                        "        naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware",
-                        "        auto_mapping: true",
-                        "        mappings:",
-                        "            App:",
-                        "                is_bundle: false",
-                        "                dir: '%kernel.project_dir%/vendor/vkozelka/mu-core-bundle/src/Entity'",
-                        "                prefix: 'App\\Entity'",
-                        "                alias: App",
-                        "",
-                        "when@test:",
-                        "    doctrine:",
-                        "        dbal:",
-                        "            # \"TEST_TOKEN\" is typically set by ParaTest",
-                        "            dbname_suffix: '_test%env(default::TEST_TOKEN)%'",
-                        "",
-                        "when@prod:",
-                        "    doctrine:",
-                        "        orm:",
-                        "            auto_generate_proxy_classes: false",
-                        "            query_cache_driver:",
-                        "                type: pool",
-                        "                pool: doctrine.system_cache_pool",
-                        "            result_cache_driver:",
-                        "                type: pool",
-                        "                pool: doctrine.result_cache_pool",
-                        "",
-                        "    framework:",
-                        "        cache:",
-                        "            pools:",
-                        "                doctrine.result_cache_pool:",
-                        "                    adapter: cache.app",
-                        "                doctrine.system_cache_pool:",
-                        "                    adapter: cache.system",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/packages/doctrine_migrations.yaml": {
-                    "contents": [
-                        "doctrine_migrations:",
-                        "    migrations_paths:",
-                        "        'DoctrineMigrations': '%kernel.project_dir%/vendor/vkozelka/mu-core-bundle/migrations'",
-                        "    enable_profiler: '%kernel.debug%'",
-                        ""
+                        "   mu_core_doctrine_dbal_url: '%env(resolve:MU_DATABASE_URL)%'",
+                        "   mu_core_elasticsearch_url: '%env(resolve:MU_ELASTICSEARCH_URL)%'"
                     ],
                     "executable": false
                 }
