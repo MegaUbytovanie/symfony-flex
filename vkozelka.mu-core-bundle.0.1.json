@@ -5,6 +5,10 @@
                 "bundles": {
                     "MuCoreBundle\\MuCoreBundle": [
                         "all"
+                    ],
+                    "Doctrine\\Bundle\\FixturesBundle\\DoctrineFixturesBundle": [
+                        "dev",
+                        "test"
                     ]
                 },
                 "copy-from-recipe": {
