@@ -1,2 +1,3 @@
 parameters:
     mu_core_doctrine_dbal_url: '%env(resolve:MU_DATABASE_URL)%'
+    mu_core_elasticsearch_url: '%env(resolve:MU_ELASTICSEARCH_URL)%'
