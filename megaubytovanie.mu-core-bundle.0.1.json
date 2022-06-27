@@ -1,6 +1,6 @@
 {
     "manifests": {
-        "vkozelka/mu-core-bundle": {
+        "megaubytovanie/mu-core-bundle": {
             "manifest": {
                 "bundles": {
                     "MuCoreBundle\\MuCoreBundle": [

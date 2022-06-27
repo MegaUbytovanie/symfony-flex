@@ -1,18 +1,18 @@
 {
     "aliases": {
-        "mu-core": "vkozelka/mu-core-bundle"
+        "mu-core": "megaubytovanie/mu-core-bundle"
     },
     "recipes": {
-        "vkozelka/mu-core-bundle": [
+        "megaubytovanie/mu-core-bundle": [
             "0.1"
         ]
     },
     "branch": "main",
     "is_contrib": true,
     "_links": {
-        "repository": "github.com/vkozelka/symfony-flex",
-        "origin_template": "{package}:{version}@github.com/vkozelka/symfony-flex:main",
-        "recipe_template": "https://raw.githubusercontent.com/vkozelka/symfony-flex/flex/main/{package_dotted}.{version}.json",
+        "repository": "github.com/MegaUbytovanie/symfony-flex",
+        "origin_template": "{package}:{version}@github.com/MegaUbytovanie/symfony-flex:main",
+        "recipe_template": "https://raw.githubusercontent.com/MegaUbytovanie/symfony-flex/flex/main/{package_dotted}.{version}.json",
         "recipe_template_relative": "{package_dotted}.{version}.json"
     }
 }
