@@ -9,7 +9,7 @@ doctrine:
         mappings:
             MuCoreBundle:
                 is_bundle: false
-                dir: '%kernel.project_dir%/vendor/vkozelka/mu-core-bundle/src/Entity'
+                dir: '%mu_core_dir%/src/Entity'
                 prefix: 'MuCoreBundle\Entity'
                 alias: MuCoreBundle
 

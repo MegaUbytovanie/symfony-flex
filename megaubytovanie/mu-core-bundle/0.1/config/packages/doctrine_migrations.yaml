@@ -1,5 +1,5 @@
 doctrine_migrations:
     migrations_paths:
-        'DoctrineMigrations': '%kernel.project_dir%/vendor/vkozelka/mu-core-bundle/migrations'
+        'DoctrineMigrations': '%mu_core_dir%/migrations'
     enable_profiler: '%kernel.debug%'
     organize_migrations: "BY_YEAR_AND_MONTH"
