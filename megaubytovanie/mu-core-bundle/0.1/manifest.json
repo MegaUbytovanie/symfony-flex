@@ -7,7 +7,7 @@
         "config/": "%CONFIG_DIR%/"
     },
     "env": {
-        "MU_DATABASE_URL": "mysql://user:password@127.0.0.1:3306/dbname?serverVersion=8.0&charset=utf8mb4",
-        "MU_ELASTICSEARCH_URL": "http://localhost:9200"
+        "MU_DATABASE_URL": "mysql://mu_db_user:mu_db_password@mysql:3306/megaubytovanie_sk?serverVersion=8.0&charset=utf8mb4",
+        "MU_ELASTICSEARCH_URL": "http://elastic-search:9200"
     }
 }
