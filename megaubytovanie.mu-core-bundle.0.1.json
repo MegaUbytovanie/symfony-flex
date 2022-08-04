@@ -16,10 +16,11 @@
                 },
                 "env": {
                     "MU_DATABASE_URL": "mysql://mu_db_user:mu_db_password@mysql:3306/megaubytovanie_sk?serverVersion=8.0&charset=utf8mb4",
-                    "MU_ELASTICSEARCH_URL": "http://elastic-search:9200"
+                    "MU_ELASTICSEARCH_URL": "http://elastic-search:9200",
+                    "MU_STORAGE_IMAGE": "var/storage/images"
                 },
                 "post-install-output": [
-                    "  * <fg=blue>Update</> <comment>.env</> file with correct values for <comment>MU_DATABASE_URL</>, <comment>MU_ELASTICSEARCH_URL</>"
+                    "  * <fg=blue>Update</> <comment>.env</> file with correct values for <comment>MU_DATABASE_URL</>, <comment>MU_ELASTICSEARCH_URL</>, <comment>MU_STORAGE_IMAGE</>"
                 ]
             },
             "files": {
