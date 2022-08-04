@@ -1,1 +1,1 @@
-  * <fg=blue>Update</> <comment>.env</> file with correct values for <comment>MU_DATABASE_URL</>
+  * <fg=blue>Update</> <comment>.env</> file with correct values for <comment>MU_DATABASE_URL</>, <comment>MU_ELASTICSEARCH_URL</>, <comment>MU_STORAGE_IMAGE</>
